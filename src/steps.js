@@ -284,7 +284,7 @@ export default [
   {
     id: "46",
     options: [
-      { value: 1, label: "Want to debug any other issue?", trigger: "1" },
+      { value: 1, label: "Would you like information on any other resource?", trigger: "1" },
     ],
   },
   
