@@ -128,7 +128,13 @@ export default [
   },
   {
     id: "15",
-    message: "abc",
+    component: (
+      <div>
+        <p>Yes, you can connect VNets that you created to the service.
+See Guidelines for Azure NetApp Files network planning for details.</p>
+        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies"> Guidelines for Azure NetApp Files </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
@@ -143,17 +149,32 @@ export default [
   },
   {
     id: "18",
-    message: "a",
+    component: (
+      <div>
+        <p>You can change the service level of an existing volume by moving the volume to another capacity pool that uses the service level you want for the volume. See Dynamically change the service level of a volume.</p>
+        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/dynamic-change-volume-service-level"> Dynamically change the service level of a volume </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
     id: "19",
-    message: "a",
+    message: "You can convert MB/s to IOPS by using the following formula: IOPS = (MBps Throughput / KB per IO) * 1024",
     trigger: 45,
   },
   {
     id: "20",
-    message: "a",
+    component: (
+      <div>
+        <p>You can take the following actions per the performance requirements:</p>
+        <ul>
+  <li>Ensure that the Virtual Machine is sized appropriately.</li>
+  <li>Enable Accelerated Networking for the VM.</li>
+  <li>Select the desired service level and size for the capacity pool.</li>
+  <li>Create a volume with the desired quota size for the capacity and performance.</li>
+</ul>
+      </div>
+    ),
     trigger: 45,
   },
   {
@@ -163,7 +184,15 @@ export default [
   },
   {
     id: "22",
-    message: "a",
+    component: (
+      <div>
+        <p>Yes, Azure NetApp Files supports Azure RBAC features. Along with the built-in Azure roles, you can create custom roles for Azure NetApp Files.
+        For the complete list of Azure NetApp Files permissions, see Azure resource provider operations for Microsoft.NetApp.
+        </p>
+        <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles"> create custom roles </a>
+        <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations#microsoftnetapp"> Microsoft.Netapp </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
@@ -173,22 +202,47 @@ export default [
   },
   {
     id: "24",
-    message: "a",
+   component: (
+      <div>
+        <p>Yes. Azure NetApp Files is a first-party service. It fully adheres to Azure Resource Provider standards. As such, Azure NetApp Files can be integrated into Azure Policy via custom policy definitions. For information about how to implement custom policies for Azure NetApp Files, see Azure Policy now available for Azure NetApp Files on Microsoft Tech Community.
+        </p>
+        <a href="https://techcommunity.microsoft.com/t5/azure/azure-policy-now-available-for-azure-netapp-files/m-p/2282258"> Azure Policy now available for Azure NetApp Files </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
     id: "25",
-    message: "a",
+    component: (
+      <div>
+        <p>You can mount Azure NetApp Files NFS volumes on AVS Windows VMs or Linux VMs. You can map Azure NetApp Files SMB shares on AVS Windows VMs. For more information, see Azure NetApp Files with Azure VMware Solution.
+        </p>
+        <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/netapp-files-with-azure-vmware-solution"> Azure NetApp Files with Azure VMware Solution. </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
     id: "26",
-    message: "a",
+    component: (
+      <div>
+        <p>Using Azure NetApp Files NFS or SMB volumes with AVS for Guest OS mounts is supported in all AVS and ANF enabled regions.
+        </p>
+        <a href="https://azure.microsoft.com/global-infrastructure/services/?products=azure-vmware,netapp"> all AVS and ANF enabled regions  </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
     id: "27",
-    message: "a",
+    component: (
+      <div>
+        <p>You can use the stat command from a client to see whether a directory is approaching the maximum size limit for directory metadata (320 MB). See Resource limits for Azure NetApp Files for the limit and calculation.
+        </p>
+        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits#resource-limits"> maximum size limit  </a>
+        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits#directory-limit"> Resource limits for Azure NetApp Files  </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
@@ -198,7 +252,13 @@ export default [
   },
   {
     id: "29",
-    message: "a",
+    component: (
+      <div>
+        <p>Azure NetApp Files provides capacity pool and volume usage metrics. You can also use Azure Monitor to monitor usage for Azure NetApp Files. See Metrics for Azure NetApp Files for details.
+          </p>
+        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-metrics"> Metrics for Azure NetApp Files  </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
@@ -223,7 +283,16 @@ export default [
   },
   {
     id: "34",
-    message: "a",
+    component: (
+      <div>
+        <p>This question isn’t directly related to application volume group for SAP HANA. As a short answer, you can use products such as AzAcSnap or Commvault for an application-consistent backup for your HANA environment. You cannot use the standard snapshots scheduled by the Azure NetApp Files built-in snapshot policy for a consistent backup of your HANA database.
+General recommendations for snapshots in an SAP HANA environment are as follows:</p>
+        <ul>
+  <li>Closely monitor the data volume snapshots. HANA tends to have a high change rate. Keeping snapshots for a long period might increase your capacity needs. Be sure to monitor the used capacity vs. allocated capacity.</li>
+  <li>If you automatically create snapshots for your (log and file) backups, be sure to monitor their retention to avoid unpredicted volume growth.</li>
+</ul>
+      </div>
+    ),
     trigger: 45,
   },
   {
@@ -233,7 +302,12 @@ export default [
   },
   {
     id: "36",
-    message: "a",
+    component: (
+      <div>
+        <p> By default, your data stays within the region where you deploy your Azure NetApp Files volumes. However, you can choose to replicate your data on a volume-by-volume basis to available destination regions using cross-region replication.</p>
+        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-introduction"> cross-region replication  </a>
+      </div>
+    ),
     trigger: 45,
   },
   {
@@ -263,17 +337,43 @@ export default [
   },
   {
     id: "42",
-    message: "a",
+     component: (
+      <div>
+        <p>The Azure NetApp Files snapshot technology greatly improves the frequency and reliability of backups. It incurs minimal performance overhead and can be safely created on an active volume. Azure NetApp Files snapshots allow near-instantaneous, secure, and optionally user-managed restores. This section describes various ways in which data can be accessed or restored from Azure NetApp Files snapshots.</p>
+        <ul>
+  <li>Restoring (cloning) an online snapshot to a new volume</li>
+  <li>Restoring (reverting) an online snapshot in-place</li>
+  <li>Restoring files or directories from online snapshots using a client</li>
+  <li>Restoring files or directories from online snapshots using single-file snapshot restore</li>
+  <li>Restoring volume backups from vaulted snapshots</li>
+</ul>
+      </div>
+    ),
     trigger: 45,
   },
   {
     id: "43",
-    message: "a",
+    component: (
+      <div>
+        <p>You can modify an existing snapshot policy to change the policy state, snapshot frequency (hourly, daily, weekly, or monthly), or number of snapshots to keep.</p>
+        <ul>
+  <li>From the NetApp Account view, click Snapshot policy.</li>
+  <li>Right-click the snapshot policy you want to modify, then select Edit.</li>
+</ul>
+      </div>
+    ),
     trigger: 45,
   },
   {
     id: "44",
-    message: "a",
+     component: (
+      <div>
+        <p>Troubleshoot snapshot policy errors</p>
+        <ul>
+        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-snapshot-policies"> Troubleshoot snapshot policy errors  </a>
+</ul>
+      </div>
+    ),
     trigger: 45,
   },
   {
