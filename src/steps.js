@@ -131,8 +131,7 @@ export default [
     component: (
       <div>
         <p>Yes, you can connect VNets that you created to the service.
-See Guidelines for Azure NetApp Files network planning for details.</p>
-        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies"> Guidelines for Azure NetApp Files </a>
+See <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies" target="_blank" rel="noopener noreferrer"> Guidelines for Azure NetApp Files </a> network planning for details.</p>
       </div>
     ),
     trigger: 45,
@@ -151,8 +150,7 @@ See Guidelines for Azure NetApp Files network planning for details.</p>
     id: "18",
     component: (
       <div>
-        <p>You can change the service level of an existing volume by moving the volume to another capacity pool that uses the service level you want for the volume. See Dynamically change the service level of a volume.</p>
-        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/dynamic-change-volume-service-level"> Dynamically change the service level of a volume </a>
+        <p>You can change the service level of an existing volume by moving the volume to another capacity pool that uses the service level you want for the volume. See <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/dynamic-change-volume-service-level" target="_blank" rel="noopener noreferrer"> Dynamically change the service level of a volume </a></p>
       </div>
     ),
     trigger: 45,
@@ -186,11 +184,9 @@ See Guidelines for Azure NetApp Files network planning for details.</p>
     id: "22",
     component: (
       <div>
-        <p>Yes, Azure NetApp Files supports Azure RBAC features. Along with the built-in Azure roles, you can create custom roles for Azure NetApp Files.
-        For the complete list of Azure NetApp Files permissions, see Azure resource provider operations for Microsoft.NetApp.
+        <p>Yes, Azure NetApp Files supports Azure RBAC features. Along with the built-in Azure roles, you can <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles" target="_blank" rel="noopener noreferrer"> create custom roles </a> for Azure NetApp Files.
+        For the complete list of Azure NetApp Files permissions, see Azure resource provider operations for <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations#microsoftnetapp" target="_blank" rel="noopener noreferrer"> Microsoft.Netapp </a>.
         </p>
-        <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles"> create custom roles </a>
-        <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations#microsoftnetapp"> Microsoft.Netapp </a>
       </div>
     ),
     trigger: 45,
@@ -204,9 +200,8 @@ See Guidelines for Azure NetApp Files network planning for details.</p>
     id: "24",
    component: (
       <div>
-        <p>Yes. Azure NetApp Files is a first-party service. It fully adheres to Azure Resource Provider standards. As such, Azure NetApp Files can be integrated into Azure Policy via custom policy definitions. For information about how to implement custom policies for Azure NetApp Files, see Azure Policy now available for Azure NetApp Files on Microsoft Tech Community.
+        <p>Yes. Azure NetApp Files is a first-party service. It fully adheres to Azure Resource Provider standards. As such, Azure NetApp Files can be integrated into Azure Policy via custom policy definitions. For information about how to implement custom policies for Azure NetApp Files, see <a href="https://techcommunity.microsoft.com/t5/azure/azure-policy-now-available-for-azure-netapp-files/m-p/2282258" target="_blank" rel="noopener noreferrer"> Azure Policy now available for Azure NetApp Files </a> on Microsoft Tech Community.
         </p>
-        <a href="https://techcommunity.microsoft.com/t5/azure/azure-policy-now-available-for-azure-netapp-files/m-p/2282258"> Azure Policy now available for Azure NetApp Files </a>
       </div>
     ),
     trigger: 45,
@@ -215,9 +210,8 @@ See Guidelines for Azure NetApp Files network planning for details.</p>
     id: "25",
     component: (
       <div>
-        <p>You can mount Azure NetApp Files NFS volumes on AVS Windows VMs or Linux VMs. You can map Azure NetApp Files SMB shares on AVS Windows VMs. For more information, see Azure NetApp Files with Azure VMware Solution.
+        <p>You can mount Azure NetApp Files NFS volumes on AVS Windows VMs or Linux VMs. You can map Azure NetApp Files SMB shares on AVS Windows VMs. For more information, see <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/netapp-files-with-azure-vmware-solution" target="_blank" rel="noopener noreferrer"> Azure NetApp Files with Azure VMware Solution. </a>.
         </p>
-        <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/netapp-files-with-azure-vmware-solution"> Azure NetApp Files with Azure VMware Solution. </a>
       </div>
     ),
     trigger: 45,
@@ -226,9 +220,8 @@ See Guidelines for Azure NetApp Files network planning for details.</p>
     id: "26",
     component: (
       <div>
-        <p>Using Azure NetApp Files NFS or SMB volumes with AVS for Guest OS mounts is supported in all AVS and ANF enabled regions.
+        <p>Using Azure NetApp Files NFS or SMB volumes with AVS for Guest OS mounts is supported in <a href="https://azure.microsoft.com/global-infrastructure/services/?products=azure-vmware,netapp" target="_blank" rel="noopener noreferrer"> all AVS and ANF enabled regions</a>.
         </p>
-        <a href="https://azure.microsoft.com/global-infrastructure/services/?products=azure-vmware,netapp"> all AVS and ANF enabled regions  </a>
       </div>
     ),
     trigger: 45,
@@ -237,10 +230,8 @@ See Guidelines for Azure NetApp Files network planning for details.</p>
     id: "27",
     component: (
       <div>
-        <p>You can use the stat command from a client to see whether a directory is approaching the maximum size limit for directory metadata (320 MB). See Resource limits for Azure NetApp Files for the limit and calculation.
+        <p>You can use the stat command from a client to see whether a directory is approaching the <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits#resource-limits" target="_blank" rel="noopener noreferrer"> maximum size limit  </a> for directory metadata (320 MB). See <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits#directory-limit" target="_blank" rel="noopener noreferrer"> Resource limits for Azure NetApp Files  </a> for the limit and calculation.
         </p>
-        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits#resource-limits"> maximum size limit  </a>
-        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits#directory-limit"> Resource limits for Azure NetApp Files  </a>
       </div>
     ),
     trigger: 45,
@@ -254,9 +245,8 @@ See Guidelines for Azure NetApp Files network planning for details.</p>
     id: "29",
     component: (
       <div>
-        <p>Azure NetApp Files provides capacity pool and volume usage metrics. You can also use Azure Monitor to monitor usage for Azure NetApp Files. See Metrics for Azure NetApp Files for details.
+        <p>Azure NetApp Files provides capacity pool and volume usage metrics. You can also use Azure Monitor to monitor usage for Azure NetApp Files. See <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-metrics " target="_blank" rel="noopener noreferrer"> Metrics for Azure NetApp Files</a> for details.
           </p>
-        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-metrics"> Metrics for Azure NetApp Files  </a>
       </div>
     ),
     trigger: 45,
@@ -304,8 +294,7 @@ General recommendations for snapshots in an SAP HANA environment are as follows:
     id: "36",
     component: (
       <div>
-        <p> By default, your data stays within the region where you deploy your Azure NetApp Files volumes. However, you can choose to replicate your data on a volume-by-volume basis to available destination regions using cross-region replication.</p>
-        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-introduction"> cross-region replication  </a>
+        <p> By default, your data stays within the region where you deploy your Azure NetApp Files volumes. However, you can choose to replicate your data on a volume-by-volume basis to available destination regions using <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-introduction" target="_blank" rel="noopener noreferrer"> cross-region replication  </a>.</p>
       </div>
     ),
     trigger: 45,
@@ -365,13 +354,11 @@ General recommendations for snapshots in an SAP HANA environment are as follows:
     trigger: 45,
   },
   {
+    
     id: "44",
      component: (
       <div>
-        <p>Troubleshoot snapshot policy errors</p>
-        <ul>
-        <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-snapshot-policies"> Troubleshoot snapshot policy errors  </a>
-</ul>
+        <p><a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-snapshot-policies" target="_blank" rel="noopener noreferrer"> Troubleshoot snapshot policy errors  </a></p>
       </div>
     ),
     trigger: 45,
