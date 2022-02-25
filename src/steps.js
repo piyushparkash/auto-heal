@@ -688,7 +688,7 @@ export default [
   },
   {
     id: "45",
-    message: "Thank You for using the NetApp self heal boat.",
+    message: "Thank You for using the NetApp self heal bot!",
     trigger: 46,
   },
   {
@@ -703,7 +703,7 @@ export default [
   },
   {
     id: "47",
-    message: "Can you please share the error that you are facing?",
+    message: "Can you please share the error that you are facing or describe the error?",
     trigger: 48,
   },
   {
@@ -726,19 +726,21 @@ export default [
     id: "49",
     component: (
       <div>
-        <span>Maybe this will be useful. </span>
         <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/troubleshoot-volumes#errors-for-ldap-volumes">
-          Troubleshoot for Volumes
+        Error when creating an LDAP-enabled NFS volume
         </a>
       </div>
     ),
+    trigger: 45
   },
   {
     id: "50",
-    message: "Let me google that for you",
+    message: "Let me search it on the web!",
     trigger: function({ steps }) {
-      window.open(`https://www.google.com/search?q=${steps[48].value}`);
-      return 1;
+      setTimeout(() => {
+        window.open(`https://www.google.com/search?q=${steps[48].value + " netapp"}`);
+      }, 1500)
+      return 45;
     },
   },
 ];

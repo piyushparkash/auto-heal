@@ -25,6 +25,7 @@ function App() {
           botAvatar="/netapp-logo.png"
           placeholder="Hi, How can I help you?"
           steps={steps}
+          headerTitle="ANF Diag N Heal"
         />
       </div>
     </ThemeProvider>
